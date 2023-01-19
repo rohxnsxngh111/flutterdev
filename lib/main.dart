@@ -1,7 +1,6 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:flutterdev/home_page.dart';
+import 'package:flutterdev/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,19 +29,24 @@ class RootPage extends StatefulWidget {
 
 class _RootPageState extends State<RootPage> {
   int currentPage = 0;
+  List<Widget> pages = const [
+    HomePage(),
+    ProfilePage(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Dev'),
+        title: const Text('Flutter Dev'),
         shadowColor: Colors.black,
         foregroundColor: Colors.purple,
       ),
-      body: HomePage(),
+      body: pages[
+          currentPage], //set to current page - homepage will be when array index 0
       floatingActionButton: FloatingActionButton(
         onPressed: () => debugPrint("Hello World"),
         foregroundColor: Colors.purple,
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
       bottomNavigationBar: NavigationBar(
         destinations: const [
