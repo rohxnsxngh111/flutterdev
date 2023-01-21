@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterdev/learn_flutter_page.dart';
+import 'package:flutterdev/meditate_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -11,11 +11,11 @@ class HomePage extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(builder: (BuildContext context) {
-                return const LearnFlutterPage();
+                return const MeditatePage();
               }),
             );
           },
-          child: const Text('Flutter Dev')),
+          child: const Text('Get Started')),
     );
   }
 }
