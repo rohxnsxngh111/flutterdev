@@ -15,7 +15,7 @@ class _MeditatePageState extends State<MeditatePage> {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-            image: NetworkImage('https://wallpaperaccess.com/full/1151428.jpg'),
+            image: AssetImage('images/backgroundBubble.gif'),
             fit: BoxFit.cover),
       ),
       child: Scaffold(

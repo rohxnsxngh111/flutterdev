@@ -40,8 +40,7 @@ class _RootPageState extends State<RootPage> {
     return Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image:
-                  NetworkImage('https://wallpaperaccess.com/full/1151428.jpg'),
+              image: AssetImage('images/backgroundBubble.gif'),
               fit: BoxFit.cover),
         ),
         child: Scaffold(
@@ -95,7 +94,7 @@ class _RootPageState extends State<RootPage> {
                             height: 10,
                           ),
                           SizedBox(
-                            width: 275,
+                            width: 100,
                             child: Text(
                               "FLUTTER DEVS",
                               style: TextStyle(
