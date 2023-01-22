@@ -1,7 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutterdev/feed_page.dart';
 import 'package:flutterdev/home_page.dart';
-import 'package:flutterdev/glass_page.dart';
+import 'package:flutterdev/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +34,7 @@ class _RootPageState extends State<RootPage> {
   List<Widget> pages = const [
     HomePage(),
     ProfilePage(),
+    FeedPage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -50,23 +52,25 @@ class _RootPageState extends State<RootPage> {
               child: Stack(children: [
                 BackdropFilter(
                   filter: ImageFilter.blur(
-                    sigmaX: 7,
-                    sigmaY: 7,
+                    sigmaX: 2,
+                    sigmaY: 2,
                   ),
                 ),
                 Container(
-                  height: 580,
+                  height: 640,
                   width: 380,
                   decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.cyan.withOpacity(0.6),
-                          spreadRadius: 1,
-                          blurRadius: 32,
+                          color: const Color.fromARGB(255, 132, 237, 234)
+                              .withOpacity(0.6),
+                          spreadRadius: 32,
+                          blurRadius: 16,
                           offset: const Offset(-96, 0),
                         ),
                         BoxShadow(
-                          color: Colors.greenAccent.withOpacity(0.6),
+                          color: const Color.fromARGB(255, 9, 160, 235)
+                              .withOpacity(0.6),
                           spreadRadius: 1,
                           blurRadius: 32,
                           offset: const Offset(96, 0),
@@ -120,7 +124,13 @@ class _RootPageState extends State<RootPage> {
                   label: ''),
               NavigationDestination(
                   icon: Icon(
-                    Icons.airline_seat_individual_suite_rounded,
+                    Icons.person,
+                    color: Colors.white,
+                  ),
+                  label: ''),
+              NavigationDestination(
+                  icon: Icon(
+                    Icons.newspaper,
                     color: Colors.white,
                   ),
                   label: ''),

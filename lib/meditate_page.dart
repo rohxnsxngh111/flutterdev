@@ -1,9 +1,11 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutterdev/feed_page.dart';
 
-import 'glass_page.dart';
+import 'profile_page.dart';
 import 'home_page.dart';
+import 'feed_page.dart';
 
 class MeditatePage extends StatefulWidget {
   const MeditatePage({super.key});
@@ -17,6 +19,7 @@ class _MeditatePageState extends State<MeditatePage> {
   List<Widget> pages = const [
     HomePage(),
     ProfilePage(),
+    FeedPage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -29,7 +32,7 @@ class _MeditatePageState extends State<MeditatePage> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
-          title: const Text('Guided Mediation'),
+          title: const Text('Get Started'),
           backgroundColor: Colors.transparent,
         ),
         body: Center(
@@ -86,9 +89,6 @@ class _MeditatePageState extends State<MeditatePage> {
                     ],
                   ),
                 ),
-                // child: const Padding(
-                //   padding: EdgeInsets.all(20.0),
-                // ),
               ),
             ]),
           ),
@@ -104,7 +104,13 @@ class _MeditatePageState extends State<MeditatePage> {
                 label: ''),
             NavigationDestination(
                 icon: Icon(
-                  Icons.airline_seat_individual_suite_rounded,
+                  Icons.person,
+                  color: Colors.white,
+                ),
+                label: ''),
+            NavigationDestination(
+                icon: Icon(
+                  Icons.newspaper,
                   color: Colors.white,
                 ),
                 label: ''),
