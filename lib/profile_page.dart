@@ -51,9 +51,9 @@ class ProfilePage extends StatelessWidget {
               Text(
                 'Profile',
                 style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 24,
                     color: Colors.black,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.w900),
               ),
             ],
           ),
@@ -71,7 +71,7 @@ class ProfilePage extends StatelessWidget {
       ),
       AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        height: 48,
+        height: 36,
         width: 360,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
@@ -105,7 +105,7 @@ class ProfilePage extends StatelessWidget {
           ],
         ),
         child: Container(
-          margin: const EdgeInsets.all(12),
+          margin: const EdgeInsets.all(6),
           child: Column(
             children: const [
               Align(
@@ -127,7 +127,7 @@ class ProfilePage extends StatelessWidget {
       ),
       AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        height: 48,
+        height: 36,
         width: 360,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
@@ -161,7 +161,7 @@ class ProfilePage extends StatelessWidget {
           ],
         ),
         child: Container(
-          margin: const EdgeInsets.all(12),
+          margin: const EdgeInsets.all(6),
           child: Column(
             children: const [
               Align(
@@ -183,7 +183,7 @@ class ProfilePage extends StatelessWidget {
       ),
       AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        height: 48,
+        height: 36,
         width: 360,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
@@ -217,7 +217,7 @@ class ProfilePage extends StatelessWidget {
           ],
         ),
         child: Container(
-          margin: const EdgeInsets.all(12),
+          margin: const EdgeInsets.all(6),
           child: Column(
             children: const [
               Align(
@@ -239,7 +239,7 @@ class ProfilePage extends StatelessWidget {
       ),
       AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        height: 48,
+        height: 36,
         width: 360,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
@@ -273,7 +273,7 @@ class ProfilePage extends StatelessWidget {
           ],
         ),
         child: Container(
-          margin: const EdgeInsets.all(12),
+          margin: const EdgeInsets.all(6),
           child: Column(
             children: const [
               Align(

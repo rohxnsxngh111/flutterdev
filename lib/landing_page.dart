@@ -59,10 +59,10 @@ class _MeditatePageState extends State<MeditatePage> {
                       )
                     ],
                     border: Border.all(
-                        color: Colors.white.withOpacity(0.2), width: 1.0),
+                        color: Colors.white.withOpacity(0.6), width: 1.0),
                     gradient: LinearGradient(
                       colors: [
-                        Colors.white.withOpacity(0.5),
+                        Colors.red.withOpacity(0.6),
                         Colors.white.withOpacity(0.2)
                       ],
                       stops: const [0.0, 1.0],

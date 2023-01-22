@@ -31,8 +31,8 @@ class HomePage extends StatelessWidget {
         ),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
-          height: 48,
-          width: 160,
+          height: 60,
+          width: 240,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(40),
             gradient: const LinearGradient(
@@ -71,9 +71,9 @@ class HomePage extends StatelessWidget {
                 Text(
                   'Get Started',
                   style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 30,
                       color: Colors.black,
-                      fontWeight: FontWeight.bold),
+                      fontWeight: FontWeight.w900),
                 ),
               ],
             ),
@@ -83,11 +83,10 @@ class HomePage extends StatelessWidget {
       const SizedBox(
         height: 20,
       ),
-      const Text(
-        '</>',
-        style: TextStyle(
-            fontSize: 36, color: Colors.white, fontWeight: FontWeight.bold),
-      ),
+      const Icon(
+        Icons.developer_mode_outlined,
+        size: 60,
+      )
     ]);
   }
 }
