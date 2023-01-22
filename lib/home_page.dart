@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterdev/meditate_page.dart';
+import 'package:flutterdev/landing_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
