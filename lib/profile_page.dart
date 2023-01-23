@@ -67,7 +67,7 @@ class ProfilePage extends StatelessWidget {
         backgroundImage: AssetImage('images/developerAvatar.png'),
       ),
       const SizedBox(
-        height: 20,
+        height: 40,
       ),
       AnimatedContainer(
         duration: const Duration(milliseconds: 200),
